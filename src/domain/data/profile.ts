@@ -83,7 +83,7 @@ export const experiences: Experience[] = [
     id: "senior-sistemas",
     company: "Senior Sistemas",
     role: "Engenheiro de Software Frontend",
-    period: "2021 – Presente",
+    period: "2023 – 2025",
     highlights: [
       "Arquitetura de aplicações frontend em larga escala com React, AngularJS e TypeScript",
       "Implementação de DDD no frontend, estruturando módulos por domínio",
@@ -97,7 +97,7 @@ export const experiences: Experience[] = [
     id: "previous-roles",
     company: "Experiências Anteriores",
     role: "Desenvolvedor Frontend",
-    period: "2018 – 2021",
+    period: "2021 – 2023",
     highlights: [
       "Criação de bibliotecas internas e pacotes NPM reutilizáveis",
       "Desenvolvimento de design systems com Figma e Storybook",

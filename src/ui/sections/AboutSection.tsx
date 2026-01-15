@@ -73,7 +73,7 @@ export function AboutSection() {
               <div className="card-professional text-center">
                 <div className="flex items-center justify-center gap-2 mb-2">
                   <Code className="w-5 h-5 text-primary" aria-hidden="true" />
-                  <span className="text-4xl font-bold text-foreground">6+</span>
+                  <span className="text-4xl font-bold text-foreground">5+</span>
                 </div>
                 <p className="text-muted-foreground">{t("about.yearsExperience")}</p>
               </div>
