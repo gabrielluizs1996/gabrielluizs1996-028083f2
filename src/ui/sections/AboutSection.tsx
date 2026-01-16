@@ -53,8 +53,8 @@ export function AboutSection() {
                 <Terminal className="w-4 h-4" aria-hidden="true" />
                 <span>{t("code.philosophy")}</span>
               </div>
-              <pre className="text-muted-foreground overflow-x-auto">
-                <code>
+              <pre className="text-muted-foreground overflow-x-auto text-xs sm:text-sm">
+                <code className="whitespace-pre-wrap break-all sm:whitespace-pre sm:break-normal">
 {`const approach = {
   ${t("code.focus")}: ${JSON.stringify(focusValues)},
   ${t("code.principle")}: "${t("code.principleValue")}",
@@ -68,7 +68,7 @@ export function AboutSection() {
 
         {/* Stats/highlights */}
         <aside className="lg:col-span-2" aria-label={t("about.highlights")}>
-          <StaggerContainer className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-1 gap-4 lg:gap-6">
+          <StaggerContainer className="grid grid-cols-1 gap-4 lg:gap-6">
             <StaggerItem>
               <div className="card-professional text-center h-full">
                 <div className="flex items-center justify-center gap-2 mb-2">
@@ -93,7 +93,7 @@ export function AboutSection() {
               </div>
             </StaggerItem>
 
-            <StaggerItem className="col-span-2 sm:col-span-3 lg:col-span-1">
+            <StaggerItem>
               <div className="card-professional h-full">
                 <h3 className="font-semibold text-foreground mb-3 text-sm sm:text-base">{t("about.alsoWorkWith")}</h3>
                 <div className="flex flex-wrap gap-1.5 sm:gap-2 text-xs sm:text-sm">
