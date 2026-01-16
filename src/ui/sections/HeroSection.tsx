@@ -25,7 +25,7 @@ export function HeroSection() {
     <section 
       ref={sectionRef}
       id="hero"
-      className="min-h-screen flex flex-col justify-center relative overflow-hidden"
+      className="min-h-[100dvh] flex flex-col justify-center relative overflow-hidden px-4 sm:px-0"
       style={{ background: "var(--gradient-hero)" }}
       aria-labelledby="hero-title"
     >
@@ -45,7 +45,7 @@ export function HeroSection() {
       />
 
       <motion.div 
-        className="section-container relative z-10 pt-20 sm:pt-0"
+        className="section-container relative z-10 pt-24 pb-16 sm:pt-0 sm:pb-0"
         style={{
           y: prefersReducedMotion ? 0 : contentY,
           opacity: prefersReducedMotion ? 1 : contentOpacity,
@@ -80,7 +80,7 @@ export function HeroSection() {
           </p>
           
           <p 
-            className="text-base sm:text-lg text-muted-foreground font-mono mb-6 sm:mb-8 animate-fade-in"
+            className="text-sm sm:text-base md:text-lg text-muted-foreground font-mono mb-6 sm:mb-8 animate-fade-in break-words"
             style={{ animationDelay: "0.4s" }}
           >
             {t("profile.subtitle")}
@@ -161,10 +161,10 @@ export function HeroSection() {
 
       {/* Scroll indicator */}
       <div 
-        className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce"
+        className="absolute bottom-4 sm:bottom-8 left-1/2 -translate-x-1/2 animate-bounce"
         aria-hidden="true"
       >
-        <ArrowDown className="w-6 h-6 text-muted-foreground" />
+        <ArrowDown className="w-5 h-5 sm:w-6 sm:h-6 text-muted-foreground" />
       </div>
     </section>
   );

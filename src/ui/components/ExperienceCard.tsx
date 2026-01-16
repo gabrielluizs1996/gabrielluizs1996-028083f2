@@ -33,7 +33,7 @@ export function ExperienceCard({ experience, className }: ExperienceCardProps) {
           </div>
         </div>
         <time 
-          className="text-xs sm:text-sm text-muted-foreground font-mono bg-muted px-2.5 sm:px-3 py-1 rounded-full self-start ml-13 sm:ml-0"
+          className="text-xs sm:text-sm text-muted-foreground font-mono bg-muted px-2.5 sm:px-3 py-1 rounded-full self-start mt-1 sm:mt-0"
           dateTime={experience.period}
         >
           {experience.period}

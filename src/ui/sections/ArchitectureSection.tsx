@@ -29,7 +29,7 @@ export function ArchitectureSection() {
         />
       </AnimatedSection>
 
-      <div className="grid md:grid-cols-2 gap-8 lg:gap-12">
+      <div className="grid gap-8 md:grid-cols-2 lg:gap-12">
         {/* Architecture explanation */}
         <StaggerContainer className="space-y-4 sm:space-y-6">
           <StaggerItem>
@@ -38,15 +38,16 @@ export function ArchitectureSection() {
                 <FolderTree className="w-5 h-5 text-primary flex-shrink-0" aria-hidden="true" />
                 <h3 className="font-semibold text-foreground text-sm sm:text-base">{t("architecture.projectStructure")}</h3>
               </div>
-              <pre className="font-mono text-xs sm:text-sm text-muted-foreground overflow-x-auto">
+              <pre className="font-mono text-[10px] sm:text-xs md:text-sm text-muted-foreground overflow-x-auto">
+                <code className="whitespace-pre">
 {`src/
-├── domain/          # Data & business rules
-│   └── data/        # Types & constants
-├── ui/              # Presentation layer
-│   ├── components/  # Reusable components
-│   └── sections/    # Page sections
-├── infra/           # External services
-└── lib/             # Utilities`}
+├── domain/       # Data & rules
+├── ui/           # Presentation
+│   ├── components/
+│   └── sections/
+├── infra/        # Services
+└── lib/          # Utilities`}
+                </code>
               </pre>
             </div>
           </StaggerItem>
